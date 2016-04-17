@@ -1,0 +1,43 @@
+language: node_js
+
+node_js:
+  - 4.3.1
+
+after_script:
+  # - npm install coveralls
+  # - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
+
+env:
+  matrix:
+    - _BROWSER: "chrome"
+      _PLATFORM: "Linux"
+    - _BROWSER: "chrome"
+      _PLATFORM: "OS_X_10.11"
+    - _BROWSER: "chrome"
+      _PLATFORM: "Windows_7"
+    - _BROWSER: "chrome"
+      _PLATFORM: "Windows_10"
+    - _BROWSER: "firefox"
+      _PLATFORM: "Linux"
+    - _BROWSER: "firefox"
+      _PLATFORM: "OS_X_10.11"
+    - _BROWSER: "firefox"
+      _PLATFORM: "Windows_7"
+    - _BROWSER: "firefox"
+      _PLATFORM: "Windows_10"
+#    - _BROWSER: "internet_explorer"
+#      _PLATFORM: "Windows_7"
+    - _BROWSER: "internet_explorer"
+      _PLATFORM: "Windows_10"
+#    - _BROWSER: "MicrosoftEdge"
+#      _PLATFORM: "Windows_10"
+    - _BROWSER: "safari"
+      _PLATFORM: "OS_X_10.11"
+    # - _BROWSER: "opera"
+    #   _PLATFORM: "Linux"
+    # - _BROWSER: "opera"
+    #   _PLATFORM: "Windows_7"
+    - _BROWSER: "iphone"
+      _PLATFORM: "OS_X_10.10"
+    - _BROWSER: "android"
+      _PLATFORM: "Linux"

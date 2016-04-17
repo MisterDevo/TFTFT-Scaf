@@ -1,0 +1,41 @@
+{
+  "name": "tftft-scaf",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "postinstall": "bower install --allow-root",
+    "start": "node ./bin/www",
+    "test": "istanbul cover _mocha -- test/**/*.js"
+  },
+  "engines": {
+    "node": "4.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterDevo/TFTFT-Scaf.git"
+  },
+  "author": "misterdevo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MisterDevo/TFTFT-Scaf/issues"
+  },
+  "homepage": "https://github.com/MisterDevo/TFTFT-Scaf#readme",
+  "dependencies": {
+    "body-parser": "~1.15.0",
+    "bower": "^1.7.7",
+    "bower-requirejs": "^1.2.0",
+    "cookie-parser": "~1.4.1",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4",
+    "saucelabs": "^1.1.0",
+    "selenium-webdriver": "^2.52.0",
+    "supertest": "^1.1.0"
+  }
+}
