@@ -11,7 +11,6 @@ Then Install it, Start it, Test it, Browse it, Containerize it ...
 * **Bower** dependencies : _bower - bower-requirejs_
   * **`bower install`** is called in `npm postinstall`  **AngularJs - RequireJs - BootstrapCss**
   * **`bower-requirejs`** is called in `bower postinstall` (_see .bowerrc_) to generate main requirejs file
-* _**md-mailgun** : my dependency to send me a mail with mailgun_
 
 ##### `npm start`
 Start **ExpressJs** server and listen to `http://localhost:3000` to serve api and static files.
